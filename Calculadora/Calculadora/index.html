@@ -18,7 +18,7 @@
                     <td><button onclick="limpar()">C</button></td>
                     <td><button onclick="voltar()">&lt;</button></td>
                     <td><button onclick="insert('/')">/</button></td>
-                    <td><button onclick="insert('x')">x</button></td>
+                    <td><button onclick="insert('*')">x</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('7')">7</button></td>
@@ -44,29 +44,7 @@
                 </tr>
             </table>
     </main>
-    <script>
-        function insert(num){
-            var numero = document.getElementById('res').innerHTML;
-            document.getElementById('res').innerHTML = numero + num;
-        }
-        function limpar(){
-            document.getElementById('res').innerHTML = '';
-        }
-        function somar(){
-
-        }
-        function voltar(){
-            var res = document.getElementById('res').innerHTML;
-            document.getElementById('res').innerHTML = res.substring(0, res.length -1)
-        }
-        function calcular(){
-            var res = document.getElementById('res').innerHTML;
-            if (res){
-                document.getElementById('res').innerHTML = eval(res);
-            }else{
-                document.getElementById('res').innerHTML = 'Nada para calcular'
-            }
-        }
-    </script>
+    <script src="./script.js"></script>
+        
 </body>
 </html>
